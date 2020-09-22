@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import VideoSection from "./components/VideoSection";
+import SearchPage from "./components/SearchPage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //BEM naming convention
+    <div className="app">
+      <Router>
+        <Header />
+        <div className="app__page">
+          <Sidebar />
+          <Switch>
+            <Route path="/search/:searchTerm">
+              <SearchPage />
+            </Route>
+            <Route path="/">
+              <VideoSection />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
