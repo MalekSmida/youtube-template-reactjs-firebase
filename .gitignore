@@ -3,6 +3,7 @@
 config_firebase.js
 firebase.json
 .firebaserc
+config_firebase.js
 
 # dependencies
 /node_modules

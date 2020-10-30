@@ -1,9 +1,12 @@
 import React from "react";
-import "./index.scss";
-import VideoRow from "./VideoRow";
-import ChannelRow from "./ChannelRow";
-import logo from "./youtube.jpg";
+
+// node modules
 import TuneOutlinedIcon from "@material-ui/icons/TuneOutlined";
+
+// local files
+import "./index.scss";
+import { VideoRow, ChannelRow } from "../../component";
+import logo from "./youtube.jpg";
 
 function SearchPage() {
   return (

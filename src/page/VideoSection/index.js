@@ -1,6 +1,8 @@
 import React from "react";
+
+// local files
 import "./index.scss";
-import VideoCard from "./VideoCard";
+import { VideoCard } from "../../component";
 import logo from "./youtube.jpg";
 
 function VideoSection() {

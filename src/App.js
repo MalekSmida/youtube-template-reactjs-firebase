@@ -1,11 +1,16 @@
 import React from "react";
-import "./App.scss";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import VideoSection from "./components/VideoSection";
-import SearchPage from "./components/SearchPage";
+
+// node modules
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+// local files
+import { Header, Sidebar } from "./component";
+import { VideoSection, Search } from "./page";
+import "./App.scss";
+
+/**
+ *
+ */
 function App() {
   return (
     //BEM naming convention
@@ -16,7 +21,7 @@ function App() {
           <Sidebar />
           <Switch>
             <Route path="/search/:searchTerm">
-              <SearchPage />
+              <Search />
             </Route>
             <Route path="/">
               <VideoSection />
