@@ -4,8 +4,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // local files
-import { Header, Sidebar } from "./component";
-import { VideoSection, Search } from "./page";
+import { Header, Sidebar } from "./components";
+import { VideoSection, Search } from "./pages";
 import "./App.scss";
 
 /**

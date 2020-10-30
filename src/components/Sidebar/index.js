@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import SidebarRow from "./SidebarRow";
+import { SidebarRow } from "../../components";
 import HomeIcon from "@material-ui/icons/Home";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
