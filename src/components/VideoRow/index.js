@@ -1,4 +1,3 @@
-import { Description } from "@material-ui/icons";
 import React from "react";
 import "./index.scss";
 
@@ -13,7 +12,7 @@ function VideoRow({
 }) {
   return (
     <div className="videoRow">
-      <img className="videoRow__thumbnail" src={channelImage} />
+      <img className="videoRow__thumbnail" src={channelImage} alt={title} />
 
       <div className="videoRow__text">
         <h3>{title}</h3>
