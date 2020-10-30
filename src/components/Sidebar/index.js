@@ -1,6 +1,6 @@
 import React from "react";
-import "./index.scss";
-import { SidebarRow } from "../../components";
+
+// node modules
 import HomeIcon from "@material-ui/icons/Home";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
@@ -11,6 +11,13 @@ import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+// local files
+import "./index.scss";
+import { SidebarRow } from "../../components";
+
+/**
+ * Sidebar that appear on left of the application
+ */
 function Sidebar() {
   return (
     <div className="sidebar">

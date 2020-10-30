@@ -8,6 +8,9 @@ import "./index.scss";
 import { VideoRow, ChannelRow } from "../../components";
 import logo from "../../assets/youtube.jpg";
 
+/**
+ * Search page redirected when search something
+ */
 function SearchPage() {
   return (
     <div className="searchPage">

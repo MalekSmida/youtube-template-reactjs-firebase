@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+
+// node modules
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
-import "./index.scss";
 import { Link } from "react-router-dom";
 
+// local files
+import "./index.scss";
+
+/**
+ * header of the application
+ */
 function Header() {
   const [inputSearch, setInputSearch] = useState("");
   return (

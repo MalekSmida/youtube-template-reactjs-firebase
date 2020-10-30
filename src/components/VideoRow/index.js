@@ -1,6 +1,19 @@
 import React from "react";
+
+// local files
 import "./index.scss";
 
+/**
+ * present the video row in search page
+ *
+ * @param {String} title
+ * @param {String} channel
+ * @param {String} views
+ * @param {String} subs
+ * @param {String} timestamp
+ * @param {String} channelImage
+ * @param {String} description
+ */
 function VideoRow({
   title,
   channel,

@@ -9,7 +9,7 @@ import { VideoSection, Search } from "./pages";
 import "./App.scss";
 
 /**
- *
+ * render main page and search page
  */
 function App() {
   return (

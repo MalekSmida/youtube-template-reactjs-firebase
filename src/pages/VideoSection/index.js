@@ -5,6 +5,9 @@ import "./index.scss";
 import { VideoCard } from "../../components";
 import logo from "../../assets/youtube.jpg";
 
+/**
+ * VideoSection presents the main page
+ */
 function VideoSection() {
   return (
     <div className="videoSection">

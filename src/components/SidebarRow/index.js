@@ -1,6 +1,15 @@
 import React from "react";
+
+// local files
 import "./index.scss";
 
+/**
+ * present each row in the Sidebar component
+ *
+ * @param {Boolean} selected
+ * @param {String} title
+ * @param {Object} Icon => material-ui icon
+ */
 function SidebarRow({ selected, title, Icon }) {
   return (
     <div className={`sidebarRow ${selected && "selected"}`}>

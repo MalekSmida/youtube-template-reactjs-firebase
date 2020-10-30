@@ -1,8 +1,22 @@
 import React from "react";
-import "./index.scss";
+
+// node modules
 import Avatar from "@material-ui/core/Avatar";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
+// local files
+import "./index.scss";
+
+/**
+ * display Malek Smida channel when render search page
+ *
+ * @param {String} channel
+ * @param {Boolean} verified
+ * @param {String} subs
+ * @param {String} nbOfVideos
+ * @param {String} description
+ * @param {String} image
+ */
 function ChannelRow({
   channel,
   verified,
