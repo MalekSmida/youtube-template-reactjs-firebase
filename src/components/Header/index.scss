@@ -26,8 +26,12 @@
     width: 40%;
     border: 1px solid lightgray;
 
-    & > input {
+    form {
       flex: 1;
+    }
+
+    input {
+      width: 100%;
       border: none;
       padding: 0 0 0 2%;
 

@@ -7,7 +7,7 @@ import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 // local files
 import "./index.scss";
@@ -17,6 +17,11 @@ import "./index.scss";
  */
 function Header() {
   const [inputSearch, setInputSearch] = useState("");
+  const history = useHistory();
+
+  const onOpenSearchPage = () => {
+    history.push(`/search/${inputSearch}`);
+  };
   return (
     <div className="header">
       <div className="header__left">
@@ -30,12 +35,14 @@ function Header() {
         </Link>
       </div>
       <div className="header__middle">
-        <input
-          placeholder="Search"
-          type="text"
-          value={inputSearch}
-          onChange={(e) => setInputSearch(e.target.value)}
-        />
+        <form onSubmit={onOpenSearchPage}>
+          <input
+            placeholder="Search"
+            type="text"
+            value={inputSearch}
+            onChange={(e) => setInputSearch(e.target.value)}
+          />
+        </form>
         <Link to={`/search/${inputSearch}`}>
           <SearchIcon className="header__middle__inputButton" />
         </Link>
