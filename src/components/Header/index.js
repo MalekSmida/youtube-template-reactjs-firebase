@@ -19,8 +19,12 @@ function Header() {
   const [inputSearch, setInputSearch] = useState("");
   const history = useHistory();
 
-  const onOpenSearchPage = () => {
-    history.push(`/search/${inputSearch}`);
+  const onOpenSearchPage = (e) => {
+    e.preventDefault();
+    if (inputSearch !== "") {
+      history.push(`/search/${inputSearch}`);
+      setInputSearch("");
+    }
   };
   return (
     <div className="header">
